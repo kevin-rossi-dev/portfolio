@@ -1,0 +1,31 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Manrope', sans-serif;
+  background: #08111f;
+  color: #e9f1f7;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #08111f;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}

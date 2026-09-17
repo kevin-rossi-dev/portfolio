@@ -1,0 +1,170 @@
+<div class="site-shell">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Kevin Rossi, torna all'inizio">
+      <span class="brand-mark">KR<span>.</span></span>
+      <span class="brand-copy">kevin rossi<small>full stack developer</small></span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navigazione principale">
+      <a href="#profilo">Profilo</a>
+      <a href="#stack">Stack</a>
+      <a href="#percorso">Percorso</a>
+      <a class="nav-contact" href="#contatti">Contatti <span>&rarr;</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section-frame">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> Full Stack Developer · Pomezia, RM</div>
+        <h1>Codice solido.<br><em>Esperienze</em> che funzionano.</h1>
+        <p class="hero-intro">
+          Sono Kevin Rossi, Full Stack Developer. Sviluppo applicazioni web con tecnologie .NET e Angular,
+          seguendo i progetti dall'analisi al rilascio.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contatti">Conosciamoci <span>&rarr;</span></a>
+          <a class="button button-quiet" href="#percorso">Il mio percorso <span>&darr;</span></a>
+        </div>
+        <div class="hero-meta">
+          <span><strong>03+</strong> anni di esperienza</span>
+          <span class="meta-divider"></span>
+          <span><strong>.NET</strong> + Angular</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Profilo di Kevin Rossi">
+        <div class="visual-grid"></div>
+        <div class="code-card code-card-top"><span class="code-dot"></span> app.component.ts</div>
+        <div class="portrait-wrap">
+          <div class="portrait-outline"></div>
+          <img src="foto%20portfolio.jpeg" alt="Ritratto di Kevin Rossi" />
+          <div class="portrait-tag"><span class="pulse-dot"></span> building digital things</div>
+        </div>
+        <div class="code-card code-card-bottom">
+          <span class="code-line blue">const</span> <span class="code-line white">developer</span> = <span class="code-line green">&#123; focus: 'impact' &#125;</span>
+        </div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Tecnologie principali">
+      <div class="ticker-inner">
+        <span>ANGULAR</span><i></i><span>C# / .NET</span><i></i><span>REST API</span><i></i><span>SQL</span><i></i><span>SWIFT</span><i></i><span>ANGULAR</span><i></i><span>C# / .NET</span>
+      </div>
+    </section>
+
+    <section class="content-section profile-section section-frame" id="profilo">
+      <div class="section-label"><span>01</span> Profilo</div>
+      <div class="profile-layout">
+        <h2>Dal dato alla<br><span>direzione.</span></h2>
+        <div class="profile-copy">
+          <p class="lead">Sviluppo applicazioni web complete, dalla prima analisi fino al rilascio.</p>
+          <p>Ho costruito la mia esperienza su un ponte concreto tra back-end e front-end: API RESTful in ambiente .NET, database relazionali e interfacce moderne in Angular. Mi piace capire il problema prima di scrivere la soluzione.</p>
+          <p>Lavoro in team Agile/Scrum, con code review, Git e comunicazione continua. Il risultato che cerco è sempre lo stesso: tecnologia affidabile, usabile e comprensibile.</p>
+          <div class="profile-signature"><span class="signature-line"></span> Kevin Rossi <small>/ full stack developer</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section stack-section section-frame" id="stack">
+      <div class="section-heading">
+        <div class="section-label"><span>02</span> Stack tecnico</div>
+        <p>Gli strumenti che uso per trasformare un'idea in un prodotto.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filtra competenze">
+        @for (filter of skillFilters; track filter) {
+          <button type="button" [class.active]="activeFilter === filter" [attr.aria-pressed]="activeFilter === filter" (click)="setFilter(filter)">{{ filter }}</button>
+        }
+      </div>
+      <div class="skills-grid">
+        @for (skill of filteredSkills; track skill.name) {
+          <article [class]="'skill-card accent-' + skill.accent">
+            <div class="skill-topline"><span class="skill-indicator"></span><span>{{ skill.category }}</span></div>
+            <h3>{{ skill.name }}</h3>
+            <div class="skill-bottom"><span>{{ skill.level }}</span><span class="skill-arrow">&nearr;</span></div>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="content-section journey-section section-frame" id="percorso">
+      <div class="section-heading journey-heading">
+        <div class="section-label"><span>03</span> Percorso</div>
+        <p>Esperienza costruita sul campo, con curiosità e metodo.</p>
+      </div>
+      <div class="journey-list">
+        <article class="journey-item current">
+          <div class="journey-date"><span>2023</span><small>in corso</small></div>
+          <div class="journey-marker"><span></span></div>
+          <div class="journey-content">
+            <div class="journey-company">Gruppo Sopranciodue <span>01</span></div>
+            <h3>Full Stack Developer</h3>
+            <p>Sviluppo di web application con Angular (v15&ndash;v22) e DevExtreme, integrazione di API RESTful tra front-end e back-end .NET, progettazione e gestione di database SQL.</p>
+            <div class="journey-tags"><span>Angular</span><span>.NET</span><span>SQL</span><span>Swift</span></div>
+          </div>
+        </article>
+        <article class="journey-item">
+          <div class="journey-date"><span>2022</span><small>2023</small></div>
+          <div class="journey-marker"><span></span></div>
+          <div class="journey-content">
+            <div class="journey-company">Olsa Informatica S.r.l. <span>02</span></div>
+            <h3>Full Stack Developer</h3>
+            <p>Web app per l'azienda e clienti esterni, dall'analisi alla progettazione. Collaborazione con Senior e consulenti esterni e formazione continua sull'ecosistema .NET.</p>
+            <div class="journey-tags"><span>Web App</span><span>C#</span><span>Agile</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section education-section section-frame">
+      <div class="section-label"><span>04</span> Formazione</div>
+      <div class="education-grid">
+        <article class="education-card featured-education">
+          <span class="education-year">2022</span>
+          <h3>Corso programmazione .NET</h3>
+          <p>Formatemp</p>
+          <small>200 ore per completare il percorso .NET</small>
+        </article>
+        <article class="education-card">
+          <span class="education-year">2020</span>
+          <h3>Diploma elettronica<br>ed elettrotecnica</h3>
+          <p>I.T.I.S. Carlo e Nello Rosselli</p>
+          <small>Conseguimento del diploma</small>
+        </article>
+        <article class="education-card">
+          <span class="education-year">2017 &ndash; 2020</span>
+          <h3>Stage Hardware<br>/ Sistemi</h3>
+          <p>Bioin S.r.l.</p>
+          <small>Computer, reti, router, switch e cablaggi</small>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section section-frame" id="contatti">
+      <div class="contact-glow"></div>
+      <div class="section-label"><span>05</span> Contatti</div>
+      <div class="contact-content">
+        <div>
+          <h2>Costruiamo qualcosa<br><em>di utile.</em></h2>
+          <p>Se cerchi una persona curiosa, concreta e pronta a entrare nel prossimo progetto, scrivimi.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:kevin.rossi.dev@gmail.com"><span class="contact-type">Email</span><strong>kevin.rossi.dev&#64;gmail.com</strong><span class="contact-arrow">&nearr;</span></a>
+          <a href="tel:+393739040417"><span class="contact-type">Telefono</span><strong>+39 373 904 0417</strong><span class="contact-arrow">&nearr;</span></a>
+          <a href="https://www.linkedin.com/in/kevin-rossi1931/" target="_blank" rel="noreferrer"><span class="contact-type">LinkedIn</span><strong>linkedin.com/in/kevin-rossi1931</strong><span class="contact-arrow">&nearr;</span></a>
+        </div>
+      </div>
+      <div class="contact-footer"><span>Pomezia, RM</span><span>Italiano / Inglese avanzato</span><span>© 2026 Kevin Rossi</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-frame">
+    <span>Designed &amp; developed by Kevin Rossi</span>
+    <a href="#top">Torna su <span>&uarr;</span></a>
+  </footer>
+</div>
